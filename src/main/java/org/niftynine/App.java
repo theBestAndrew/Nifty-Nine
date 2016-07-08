@@ -1,13 +1,29 @@
 package org.niftynine;
 
+import java.io.ByteArrayOutputStream;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.List;
+import java.nio.charset.StandardCharsets;
+
 /**
  * Hello world!
  *
  */
 public class App 
 {
-    public static void main( String[] args )
+    @Deprecated(forRemoval = true , since = "8")
+    public void deprecatedMethod(){
+
+    }
+    public static void main( String[] args ) throws IOException
     {
-        System.out.println( "Hello World!" );
+        List<String> list = List.of("Hello","World","!");
+        String wholeString = String.join(" ",list);
+
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        new ByteArrayInputStream(wholeString.getBytes(StandardCharsets.UTF_8)).transferTo(baos);
+
+        System.out.println(baos.toString());
     }
 }
