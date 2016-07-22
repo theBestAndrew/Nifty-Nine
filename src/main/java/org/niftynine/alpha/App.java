@@ -1,4 +1,4 @@
-package org.niftynine;
+package org.niftynine.alpha;
 
 import java.io.ByteArrayOutputStream;
 import java.io.ByteArrayInputStream;

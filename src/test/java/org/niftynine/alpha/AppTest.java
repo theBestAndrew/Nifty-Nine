@@ -1,8 +1,6 @@
-package org.niftynine;
+package org.niftynine.alpha;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
 /**
  * Unit test for simple App.
