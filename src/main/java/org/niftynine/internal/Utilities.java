@@ -1,5 +1,5 @@
 package org.niftynine.internal;
 
 
-public class App2 {
+public class Utilities {
 }

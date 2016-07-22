@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 public class App 
 {
     @Deprecated(forRemoval = true , since = "8")
-    public void deprecatedMethod(){
+    void deprecatedMethod(){
 
     }
     public static void main( String[] args ) throws IOException
